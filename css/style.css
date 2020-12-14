@@ -642,10 +642,13 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
+  transition: 250ms linear 300ms;
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 250ms linear;
 }
 
 .modal {
